@@ -1,0 +1,24 @@
+<Window 
+  x:Class="DesktopPet.PetBasics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            WindowStyle="None"
+         AllowsTransparency="True"
+         Background="Transparent"
+  Title="Window with button"
+  Width="250" Height="250"
+  ShowInTaskbar="False" Topmost="True"
+  ResizeMode="NoResize" BorderThickness="0" BorderBrush="Black">
+  <!-- x:Class="DesktopPet.recources.canvas" -->
+  <!-- Add button to window 
+  <Button Name="button" Background="HoneyDew" BorderBrush="Black"
+   BorderThickness="1" Click="HelloClick" ClickMode="Release">
+   Click Me for a prize!</Button> -->
+
+<Image x:Name="CharacterImage" 
+   Width="200" Height="200" MouseLeftButtonDown="CharacterClick">
+</Image>
+
+
+
+</Window>

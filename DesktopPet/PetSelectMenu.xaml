@@ -1,0 +1,18 @@
+<Window
+  x:Class="DesktopPet.PetSelectMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            WindowStyle="None"
+         AllowsTransparency="True"
+         Background="Transparent"
+  Title="MenuMode"
+  Width="250" Height="100">
+
+
+
+<Button Name="button" Background="HoneyDew" BorderBrush="Black"
+   BorderThickness="1" Click="HelloClick" ClickMode="Release">
+   Click me to close</Button>
+
+
+</Window>
