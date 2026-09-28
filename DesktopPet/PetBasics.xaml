@@ -6,7 +6,7 @@
          AllowsTransparency="True"
          Background="Transparent"
   Title="Window with button"
-  Width="250" Height="250"
+  Width="200" Height="200"
   ShowInTaskbar="False" Topmost="True"
   ResizeMode="NoResize" BorderThickness="0" BorderBrush="Black">
   <!-- x:Class="DesktopPet.recources.canvas" -->
@@ -16,9 +16,15 @@
    Click Me for a prize!</Button> -->
 
 <Image x:Name="CharacterImage" 
-   Width="200" Height="200" MouseLeftButtonDown="CharacterClick">
+       Stretch="Uniform"
+       RenderOptions.BitmapScalingMode="NearestNeighbor"
+       SnapsToDevicePixels="True" 
+       Width="100" Height="100" 
+       VerticalAlignment="Bottom"
+       HorizontalAlignment="Center"
+       MouseLeftButtonDown="CharacterClick" 
+       MouseRightButtonDown="CharacterRightCLick">
 </Image>
-
 
 
 </Window>

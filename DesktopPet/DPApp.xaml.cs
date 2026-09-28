@@ -20,14 +20,31 @@ namespace DesktopPet
                     startMinimized = true;
                 }
             }
+
+            SpriteManager spriteManager = new SpriteManager();
+
                         // Create main application window, starting minimized if specified
-            PetBasics mainWindow = new PetBasics();
+
+            Sprite A = spriteManager.LoadSprite("kris");
+            //Sprite B = spriteManager.LoadSprite("jevil");
+            PetBasics kris = new PetBasics(A,spriteManager);
+            //PetBasics jevil = new PetBasics(B,spriteManager);
+
             if (startMinimized)
             {
-                mainWindow.WindowState = WindowState.Minimized;
+                kris.WindowState = WindowState.Minimized;
+                //jevil.WindowState = WindowState.Minimized;
             }
-            mainWindow.Show();
+            kris.Show();
+            //jevil.Show();
+            
+
+            //Character sprites to add:
+            //Overwatch
+            //Echo
         }
+
+        
 
     }
 }

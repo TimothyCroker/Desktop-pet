@@ -8,9 +8,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ApplicationIcon></ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Include="DPApp.xaml" />
-    <Resource Include="recources\CharacterSprites\**\*.png" />
+    <Content Include="recources\CharacterSprites\**\*.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>
